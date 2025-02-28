@@ -1,0 +1,324 @@
+html {
+    font-family: "Poppins",serif;
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    background-color: #F2F9FE;
+    color:#223344
+}
+.dark-mode {
+    background-color: #223344;
+    color: #F2F9FE
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    position: relative;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem
+}
+.navbar ul li {
+    list-style:none;
+}
+
+.navbar ul li a {
+    position: relative;
+    color: inherit;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2A4DD0;
+    transition: width 0.3s ease-in-out;
+}
+.dark-mode .navbar ul li a::after {
+    background-color: #F2F9FE;
+}
+.navbar ul li a:hover {
+    color: #2A4DD0; /* Change text color to match the underline */
+}
+.dark-mode .navbar ul li a:hover {
+    color: #F2F9FE; /* Change text color to match the underline */
+}
+#hamburger {
+    display: none;
+    border: none;
+    background-color: none;
+}
+#hamburger-icon {
+    stroke: #223344;
+    border: none;
+    background: none;
+    outline: none;
+}
+.dark-mode #hamburger-icon {
+    stroke: #F2F9FE;
+    border: none;
+    background: none;
+    outline: none;
+}
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+.close-button {
+    display: none;
+}
+.toggle-container {
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+
+.toggle-label {
+    display: block;
+    width: 60px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out;
+}
+
+.toggle-slider {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sun {
+    opacity: 0;
+}
+
+.moon {
+    opacity: 1;
+}
+
+/* Hide the default checkbox */
+#toggle {
+    display: none;
+}
+
+/* Dark mode styles */
+#toggle:checked + .toggle-label {
+    background-color: #1c1c1c;
+}
+
+/* Move the slider and switch images */
+#toggle:checked + .toggle-label .toggle-slider {
+    transform: translateX(30px);
+}
+
+#toggle:checked + .toggle-label .sun {
+    opacity: 1;
+}
+
+#toggle:checked + .toggle-label .moon {
+    opacity: 0;
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    color: inherit;
+}
+.hero-section{
+    padding-top: 1rem;
+}
+.left-section {
+    color:inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.left-section p {
+    color: inherit;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.left-section h1 {
+    color:inherit;
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+.get-started-demo {
+    display: flex;
+    gap: 2rem;
+}
+.get-started {
+    font-size: 1rem;
+    width: 10rem;
+    height: 3rem;
+    color: #FFFFFF;
+    background-color: #2A4DD0;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.get-started:hover {
+    background-color: #1A3AA6;  
+    transform: translateY(-3px);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /
+}
+.get-live-demo {
+    font-size: 1rem;
+    width: 10rem;
+    height: 3rem;
+    color: #2A4DD0;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration-thickness 0.3s ease;
+}
+.get-live-demo.dark-mode {
+    color: #FFFFFF
+}
+.get-live-demo:hover {
+    color: #1A3AA6;  /* Slightly darker blue on hover */
+    text-decoration-thickness: 4px;  /* Thicker underline */
+    text-underline-offset: 0.7rem;  /* More space between text and underline */
+}
+.requirements {
+    display: flex;
+    gap: 1rem;
+}
+.requirements div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.5rem;
+}
+.requirements div p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+@media only screen and (max-width: 640px) {
+    body {
+        padding: 0.5rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 4rem;
+    }
+    .navbar {
+        position: fixed;
+        top: 1.125rem;
+        right: -15.5rem;
+        width: 15.5rem;
+        background-color: #FFFFFF;
+        height: 100vh;
+        transition: right 0.3s ease-in-out;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+    
+    .dark-mode .navbar {
+        background-color: #223344;
+    }
+    .close-button {
+        display:block;
+        position: absolute;
+        top:0;
+        right: 0rem;
+    }
+    .close-button button {
+        border: 0;
+        background-color: transparent;
+    }
+    .close-button button:hover{
+        transform: scale(1.05);
+    }
+    .dark-mode .close-button button svg rect  {
+        fill:#F2F9FE
+    }
+    
+    .navbar.show{
+        right: 0;
+    }
+    .hero-section {
+        max-width: 100%;
+    }
+    .left-section {
+        gap: 1rem;
+    }
+    .left-section p {
+        font-size: 1rem;
+    }
+    .left-section h1 {
+        font-size: 2.5rem;
+    }
+    #hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: auto; /* Pushes it to the right */
+        transition: all 0.3s ease;
+    }
+    #hamburger.show {
+        transform: translateY(45deg);
+        opacity: 0;
+    }
+    .hero-section {
+        display: flex;
+        justify-content: center;
+    }
+    .hero-image {
+        width: 50%;
+    }
+}
+    

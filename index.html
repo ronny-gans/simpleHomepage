@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="description" content="Alarado Homepage">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Homepage</title>
+    <link rel="icon" type="image/dev-icon" href="resources/favicon.ico">
+</head>
+<body>
+    <div class="header">
+        <img src="resources/alarado-icon-homepage.svg" alt="alarado icon">
+        <div class="navbar">
+            <ul>
+                <li class="close-button"><button><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="7.16113" y="23.2176" width="22" height="3" rx="1.5" transform="rotate(-45 7.16113 23.2176)" fill="#223344"/>
+                    <rect x="9.28223" y="7.66116" width="22" height="3" rx="1.5" transform="rotate(45 9.28223 7.66116)" fill="#223344"/>
+                    </svg></button></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Resource</a></li>
+                <li><a href="#">Contact</a></li>
+                <!--placeholder-->
+                <li class="toggle-placeholder"></li>
+            </ul>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggle-label">
+                <div class="toggle-slider">
+                    <img src="resources/Moon_fill.svg" alt="moon" class="icon moon-fill">
+                    <img src="resources/Sun_fill.svg" alt="sun" class="icon sun">
+                </div>
+            </label>
+        </div>
+        <button id="hamburger">
+            <svg id="hamburger-icon" width="40" height="40" viewBox="0 0 24 24">
+                <path d="M3 6h18M3 12h18m-18 6h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+        </button>
+    </div>
+    <div class="container">
+        <div class="hero-section">
+            <img src="resources/hero-image-simple-homepage.png" alt="hero image" class="hero-image">
+        </div>
+        <div class="left-section">
+            <p class="description">😎 Simple way to communicate</p>
+            <h1 class="title">Actions for Accessibility in Design</h1>
+            <p class="sub-title">The fastest way to build and deploy websites with reusable components.</p>
+            <div class="get-started-demo">
+                <button class="get-started">GET STARTED</button>
+                <button class="get-live-demo">Get live demo</button>
+            </div>
+            <div class="requirements">
+                <div>
+                    <img src="resources/Done_ring_round_fill.svg" alt="done ring">
+                    <p>No credit card required</p>
+                </div>
+                <div>
+                    <img src="resources/Done_ring_round_fill.svg" alt="done ring">
+                    <p>No software to install</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
